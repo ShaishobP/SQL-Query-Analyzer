@@ -1,0 +1,46 @@
+from db_operations import execute_query
+
+#Analyze_query function
+def analyze_query(query):
+    if 'SELECT' in query.upper():
+        suggestions = []
+
+        # Check if WHERE clause is missing
+        if 'WHERE' not in query.upper():
+            suggestions.append("Consider adding a WHERE clause to filter data.")
+
+        # Suggest selecting specific columns instead of SELECT *
+        if 'SELECT *' in query.upper():
+            suggestions.append("Avoid using SELECT *; specify only the columns you need.")
+        
+        # Suggest adding LIMIT if it's a large result set
+        if 'LIMIT' not in query.upper():
+            suggestions.append("Consider adding LIMIT to restrict the number of rows returned.")
+
+        return suggestions if suggestions else ["Query looks good."]
+    
+    # For now, just return a default message for other queries
+    return ["Query looks good."]
+
+def main():
+    query = input("Enter your SQL query: ")  # Ask the user for the query
+
+    # Execute the query using the function from db_operations.py
+    results, execution_time = execute_query(query)
+
+    # Display the query results
+    print("Results:")
+    for row in results:
+        print(row)
+
+    # Display the execution time of the query
+    print(f"Execution Time: {execution_time} seconds")
+
+    # Get and display query optimization suggestions
+    suggestions = analyze_query(query)
+    print("\nOptimization Suggestions:")
+    for suggestion in suggestions:
+        print(f"- {suggestion}")
+
+if __name__ == '__main__':
+    main()
