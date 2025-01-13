@@ -23,7 +23,9 @@ This project aims to provide developers with a powerful SQL query analyzer and e
 - **Execution Time**: View the execution time for each query to assess performance.
 - **Result Visualization**: View SQL query results in an organized table format for better clarity.
 - **Real-Time Suggestions**: As you type your SQL query, the tool provides real-time suggestions for optimization based on common inefficiencies.
-  
+
+![image](https://github.com/user-attachments/assets/45a3899d-e971-487f-91e2-3f680dc206d5)
+
 ## Installation
 
 ### Prerequisites
@@ -35,7 +37,6 @@ This project aims to provide developers with a powerful SQL query analyzer and e
   - `pandas`
   - `sqlite3`
   - `tkinter`
-  - `matplotlib`
   - `plotly`
 
 ### Steps to Install
