@@ -1,6 +1,6 @@
 # SQL Query Analyzer
 
-A simple, user-friendly SQL query execution and analysis tool designed to help developers optimize their SQL queries and visualize results. This project allows users to input SQL queries, receive execution feedback, and obtain suggestions on improving performance. Additionally, the tool displays the results of executed queries in a visually appealing format.
+A simple, user-friendly SQL query execution and analysis tool designed to help developers optimize their SQL queries. This project allows users to input SQL queries, receive execution feedback, and obtain suggestions on improving performance. Additionally, the tool displays the results of executed queries in a visually appealing format.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
