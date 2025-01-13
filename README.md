@@ -6,11 +6,6 @@ A simple, user-friendly SQL query execution and analysis tool designed to help d
 1. [Project Overview](#project-overview)
 2. [Features](#features)
 3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Screenshots](#screenshots)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
 
 ## Project Overview
 
